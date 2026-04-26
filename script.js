@@ -3,7 +3,7 @@ const reveals = document.querySelectorAll('.reveal');
 document.querySelectorAll('.plate.reveal').forEach((el, i) => {
     el.style.setProperty('--reveal-delay', (i * 90) + 'ms');
 });
-document.querySelectorAll('.process-card.reveal, .service.reveal, .testimonial.reveal').forEach((el, i) => {
+document.querySelectorAll('.service-row.reveal, .testimonial.reveal, .catalogue-item.reveal').forEach((el, i) => {
     el.style.setProperty('--reveal-delay', (i * 110) + 'ms');
 });
 const io = new IntersectionObserver(entries => {
