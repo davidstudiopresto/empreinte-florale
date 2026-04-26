@@ -4,11 +4,62 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>L'Empreinte Florale / Artisan Fleuriste à Port-Vendres</title>
-<meta name="description" content="Artisan fleuriste à Port-Vendres. Bouquets, compositions et décorations florales sur mesure pour tous types d'événements.">
+<meta name="description" content="Artisan fleuriste à Port-Vendres. Bouquets, compositions et décorations florales sur mesure pour mariages, cérémonies, hommages et événements privés.">
+<meta name="keywords" content="fleuriste Port-Vendres, bouquet mariage, fleurs Pyrénées-Orientales, artisan fleuriste 66, composition florale, fleurs cimetière">
+<meta name="author" content="Jérémy Marques Borras">
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="L'Empreinte Florale — Artisan Fleuriste à Port-Vendres">
+<meta property="og:description" content="Bouquets, compositions et décorations florales sur mesure pour vos plus beaux moments.">
+<meta property="og:image" content="images/bouquet-01.jpg">
+<meta property="og:url" content="https://davidstudiopresto.github.io/empreinte-florale/">
+<meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon SVG (fleur jaune dorée) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cg fill='%23f2c94c'%3E%3Ccircle cx='12' cy='6' r='3'/%3E%3Ccircle cx='6' cy='10' r='3'/%3E%3Ccircle cx='18' cy='10' r='3'/%3E%3Ccircle cx='9' cy='16' r='3'/%3E%3Ccircle cx='15' cy='16' r='3'/%3E%3Ccircle cx='12' cy='12' r='2.5' fill='%238a7a2a'/%3E%3C/g%3E%3C/svg%3E">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=3">
+<link rel="stylesheet" href="styles.css?v=4">
+
+<!-- Schema.org LocalBusiness -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Florist",
+    "name": "L'Empreinte Florale",
+    "image": "images/bouquet-01.jpg",
+    "@id": "https://davidstudiopresto.github.io/empreinte-florale/",
+    "url": "https://davidstudiopresto.github.io/empreinte-florale/",
+    "telephone": "+33618987132",
+    "email": "lempreinteflorale66@gmail.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4 avenue Vauban",
+        "addressLocality": "Port-Vendres",
+        "postalCode": "66660",
+        "addressCountry": "FR"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.5172,
+        "longitude": 3.1064
+    },
+    "founder": "Jérémy Marques Borras",
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday","Saturday"]
+    },
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "reviewCount": "22"
+    }
+}
+</script>
 </head>
 <body>
 
@@ -29,11 +80,21 @@
         <div class="nav-left">
             <a href="#galerie">Galerie</a>
             <a href="#services">Prestations</a>
+            <a href="#mariage">Mariage</a>
             <a href="#avis">Avis</a>
-            <a href="#apropos">La Maison</a>
         </div>
         <a href="#accueil" class="brand" aria-label="L'Empreinte Florale, Accueil">
-            <span class="mark">L'Empreinte Florale<span style="color:var(--yellow);font-style:normal">.</span></span>
+            <svg class="brand-logo" viewBox="0 0 320 90" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <text x="0" y="48" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="44" fill="#2d4128">L'empreinte</text>
+                <text x="60" y="82" font-family="'Cormorant Garamond', serif" font-style="italic" font-weight="500" font-size="36" fill="#2d4128">Florale</text>
+                <g transform="translate(232, 30)">
+                    <ellipse cx="14" cy="14" rx="13" ry="11" fill="#f4d8d0" stroke="#c7948a" stroke-width="0.8"/>
+                    <path d="M14 6 Q9 10 8 14 Q9 19 14 22 Q19 19 20 14 Q19 10 14 6 Z" fill="#e8b8ad" opacity="0.6"/>
+                    <path d="M14 8 Q11 12 11 14 Q12 17 14 19 Q17 17 17 14 Q16 11 14 8 Z" fill="#d99c91"/>
+                    <path d="M-4 18 Q0 22 6 22 Q4 26 0 26 Q-4 24 -4 18 Z" fill="#3d5a37"/>
+                    <path d="M28 8 Q34 4 38 8 Q36 12 32 12 Q28 12 28 8 Z" fill="#3d5a37"/>
+                </g>
+            </svg>
             <span class="sub">Artisan Fleuriste / Port-Vendres</span>
         </a>
         <div class="nav-right">
@@ -49,17 +110,25 @@
     </nav>
 </header>
 
-<!-- Hero -->
-<section class="hero reveal" id="accueil">
-    <svg class="hero-orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
-        <path d="M12 2v20M5 7c2 3 5 4 7 4s5-1 7-4M5 17c2-3 5-4 7-4s5 1 7 4" stroke-linecap="round"/>
-    </svg>
-    <div class="eyebrow">Maison artisanale / Port-Vendres</div>
-    <h1>par Jérémy <em>Marques Borras</em></h1>
-    <p class="lede">
-        4 avenue Vauban, 66660 Port-Vendres
-    </p>
-    <div class="rule"></div>
+<!-- Hero plein écran -->
+<section class="hero-fullscreen" id="accueil">
+    <div class="hero-bg" style="background-image: url('images/bouquet-03.jpg?v=2');"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-inner reveal in">
+        <svg class="hero-orn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M12 2v20M5 7c2 3 5 4 7 4s5-1 7-4M5 17c2-3 5-4 7-4s5 1 7 4" stroke-linecap="round"/>
+        </svg>
+        <div class="eyebrow eyebrow-light">Maison artisanale / Port-Vendres</div>
+        <h1>par Jérémy <em>Marques Borras</em></h1>
+        <p class="lede lede-light">
+            4 avenue Vauban, 66660 Port-Vendres
+        </p>
+        <div class="rule rule-light"></div>
+        <a href="#galerie" class="hero-scroll-cta" aria-label="Découvrir nos créations">
+            <span>Découvrir</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14"><path d="M12 5v14M5 12l7 7 7-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+    </div>
 </section>
 
 <!-- À propos -->
@@ -70,7 +139,7 @@
 
 <section class="about reveal">
     <div class="about-image">
-        <img src="images/gerant.jpg" alt="L'artisane de L'Empreinte Florale">
+        <img src="images/gerant.jpg" alt="Jérémy Marques Borras, artisan fleuriste à Port-Vendres">
     </div>
     <div class="about-text">
         <div class="no">01</div>
@@ -81,28 +150,79 @@
     </div>
 </section>
 
+<!-- Notre processus -->
+<div class="section-head reveal" id="processus">
+    <div class="kicker">Notre approche</div>
+    <h2>Le <em>processus</em></h2>
+</div>
+
+<section class="process reveal">
+    <article class="process-step">
+        <div class="process-num">I</div>
+        <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+        </svg>
+        <h3>L'échange</h3>
+        <p>On écoute votre histoire, votre intention, l'occasion. Une discussion sincère pour cerner l'émotion à transmettre.</p>
+    </article>
+    <article class="process-step">
+        <div class="process-num">II</div>
+        <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M12 2C12 2 8 6 8 10C8 12.2 9.8 14 12 14C14.2 14 16 12.2 16 10C16 6 12 2 12 2Z"/>
+            <path d="M12 14V22M8 18L12 22L16 18"/>
+        </svg>
+        <h3>La composition</h3>
+        <p>Sélection des fleurs de saison chez nos producteurs, harmonie sur mesure des couleurs, des textures et des parfums.</p>
+    </article>
+    <article class="process-step">
+        <div class="process-num">III</div>
+        <svg class="process-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <h3>La remise</h3>
+        <p>Retrait en boutique ou livraison soignée. Chaque création est protégée et présentée comme un véritable cadeau.</p>
+    </article>
+</section>
+
 <!-- Section heading galerie -->
 <div class="section-head reveal" id="galerie">
     <div class="kicker">La carte du moment</div>
     <h2>Quelques <em>créations</em></h2>
 </div>
 
+<!-- Filtres pills -->
+<div class="gallery-filters reveal" role="tablist" aria-label="Filtres galerie">
+    <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">Tout</button>
+    <button class="filter-pill" data-filter="bouquet" role="tab" aria-selected="false">Bouquets</button>
+    <button class="filter-pill" data-filter="mariage" role="tab" aria-selected="false">Mariages</button>
+    <button class="filter-pill" data-filter="hommage" role="tab" aria-selected="false">Hommages</button>
+    <button class="filter-pill" data-filter="saisonnier" role="tab" aria-selected="false">Saisonnier</button>
+</div>
+
 <!-- Gallery grid -->
 <div class="grid" id="product-grid">
-    <figure class="card reveal" data-index="0">
+    <figure class="card reveal" data-index="0" data-cat="bouquet saisonnier">
         <div class="frame"><img src="images/bouquet-01.jpg?v=2" alt="Bouquet rouge et vert artisanal"></div>
     </figure>
 
-    <figure class="card reveal" data-index="1">
+    <figure class="card reveal" data-index="1" data-cat="bouquet saisonnier">
         <div class="frame"><img src="images/bouquet-02.jpg?v=2" alt="Bouquet automnal coloré"></div>
     </figure>
 
-    <figure class="card reveal" data-index="2">
+    <figure class="card reveal" data-index="2" data-cat="bouquet mariage">
         <div class="frame"><img src="images/bouquet-03.jpg?v=2" alt="Bouquet pastel printanier"></div>
     </figure>
 
-    <figure class="card reveal" data-index="3">
+    <figure class="card reveal" data-index="3" data-cat="bouquet">
         <div class="frame"><img src="images/bouquet-04.jpg?v=2" alt="Bouquet champêtre"></div>
+    </figure>
+
+    <figure class="card reveal" data-index="4" data-cat="bouquet hommage">
+        <div class="frame"><img src="images/produit-bouquet.png" alt="Bouquet d'hommage"></div>
+    </figure>
+
+    <figure class="card reveal" data-index="5" data-cat="hommage">
+        <div class="frame"><img src="images/produit-coussin.png" alt="Coussin floral d'hommage"></div>
     </figure>
 </div>
 
@@ -134,6 +254,18 @@
     </article>
 </section>
 
+<!-- Mariage feature -->
+<section class="mariage-feature reveal" id="mariage">
+    <div class="mariage-bg" style="background-image: url('images/bouquet-03.jpg?v=2');"></div>
+    <div class="mariage-overlay"></div>
+    <div class="mariage-content">
+        <div class="kicker kicker-light">Spécialité de la Maison</div>
+        <h2>Votre jour,<br>votre <em>signature</em> florale</h2>
+        <p>Du bouquet de la mariée aux arches cérémoniales, en passant par les centres de table et les boutonnières — Jérémy compose chaque détail pour faire de votre mariage une œuvre florale unique, en harmonie avec vous et votre lieu.</p>
+        <a href="#contact" class="btn btn-light">Préparer mon mariage</a>
+    </div>
+</section>
+
 <!-- Avis -->
 <div class="section-head reveal" id="avis">
     <div class="kicker">Ils nous ont fait confiance</div>
@@ -141,14 +273,22 @@
     <div class="rating">
         <span class="rating-score">5,0</span>
         <span class="rating-stars" aria-label="5 étoiles sur 5">★★★★★</span>
-        <span class="rating-count">22 avis Google</span>
+        <a href="https://www.google.com/search?q=L'Empreinte+Florale+Port-Vendres" target="_blank" rel="noopener" class="rating-google">
+            <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+            </svg>
+            <span>22 avis Google</span>
+        </a>
     </div>
 </div>
 
 <section class="reviews">
     <article class="review reveal">
         <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
-        <p>« Jérémy aime son métier et chaque bouquet qu'il vous compose le montre à la perfection. On sent tout son amour dans chaque création et tout est fait pour vous combler. Il comprend chacune de vos attentes et de vos envies. Merci Jérémy de nous faire partager ta passion, chacun de tes bouquets nous touche. »</p>
+        <p>« Jérémy aime son métier et chaque bouquet qu'il vous compose le montre à la perfection. On sent tout son amour dans chaque création et tout est fait pour vous combler. Merci Jérémy de nous faire partager ta passion, chacun de tes bouquets nous touche. »</p>
         <div class="review-author">
             <span class="review-name">Julie B.</span>
             <span class="review-date">Il y a un mois</span>
@@ -175,7 +315,7 @@
 
     <article class="review reveal">
         <div class="review-stars" aria-label="5 étoiles">★★★★★</div>
-        <p>« Jérémy a été fantastique pour notre mariage ! Il m'a aidée à tout préparer à distance en avance. Le bouquet ainsi que la couronne de fleurs qu'il m'a confectionnés étaient vraiment magnifiques. Je suis reconnaissante pour son aide précieuse et je le recommande chaleureusement. »</p>
+        <p>« Jérémy a été fantastique pour notre mariage ! Il m'a aidée à tout préparer à distance en avance. Le bouquet ainsi que la couronne de fleurs qu'il m'a confectionnés étaient vraiment magnifiques. Je le recommande chaleureusement. »</p>
         <div class="review-author">
             <span class="review-name">Justine D.</span>
             <span class="review-date">Juillet 2025</span>
@@ -199,7 +339,7 @@
 </div>
 
 <div class="grid commande-grid">
-    <figure class="card reveal" data-index="4">
+    <figure class="card reveal" data-index="6">
         <div class="frame"><img src="images/produit-bouquet.png" alt="Bouquet floral artisanal"></div>
         <figcaption class="meta">
             <span class="name">Bouquet</span>
@@ -207,7 +347,7 @@
         </figcaption>
         <div class="note">Composition florale sur mesure</div>
     </figure>
-    <figure class="card reveal" data-index="5">
+    <figure class="card reveal" data-index="7">
         <div class="frame"><img src="images/produit-coussin.png" alt="Coussin floral d'hommage"></div>
         <figcaption class="meta">
             <span class="name">Coussin</span>
@@ -228,36 +368,81 @@
 </div>
 
 <section class="contact-block reveal">
-    <div class="contact-info-card">
-        <h3>L'Empreinte Florale</h3>
-        <div class="row">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div>
-                <strong>Adresse</strong>
-                <p>4 avenue Vauban<br>66660 Port-Vendres</p>
+    <form class="contact-form" id="contact-form" onsubmit="return submitForm(event)">
+        <h3>Demande de devis</h3>
+        <div class="form-row">
+            <label>
+                <span>Nom</span>
+                <input type="text" name="nom" required>
+            </label>
+            <label>
+                <span>Email ou téléphone</span>
+                <input type="text" name="contact" required>
+            </label>
+        </div>
+        <div class="form-row">
+            <label>
+                <span>Type d'événement</span>
+                <select name="event">
+                    <option value="Bouquet">Bouquet sur mesure</option>
+                    <option value="Mariage">Mariage</option>
+                    <option value="Hommage">Hommage / Deuil</option>
+                    <option value="Decoration">Décoration événementielle</option>
+                    <option value="Autre">Autre</option>
+                </select>
+            </label>
+            <label>
+                <span>Date souhaitée</span>
+                <input type="date" name="date">
+            </label>
+        </div>
+        <label>
+            <span>Votre message</span>
+            <textarea name="message" rows="4" placeholder="Dites-nous tout sur l'occasion, vos envies, le lieu…" required></textarea>
+        </label>
+        <button type="submit" class="btn btn-dark">Envoyer la demande</button>
+        <p class="form-note">Votre message ouvrira votre application email pour être envoyé directement à Jérémy.</p>
+    </form>
+
+    <div class="contact-side">
+        <div class="contact-info-card">
+            <h3>L'Empreinte Florale</h3>
+            <div class="row">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <div>
+                    <strong>Adresse</strong>
+                    <p>4 avenue Vauban<br>66660 Port-Vendres</p>
+                </div>
+            </div>
+            <div class="row">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <div>
+                    <strong>Téléphone</strong>
+                    <p><a href="tel:+33618987132">06 18 98 71 32</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <div>
+                    <strong>Email</strong>
+                    <p><a href="mailto:lempreinteflorale66@gmail.com">lempreinteflorale66@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="row">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                <div>
+                    <strong>Horaires</strong>
+                    <p>Du mardi au samedi<br>Sur rendez-vous & en boutique</p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <div>
-                <strong>Horaires</strong>
-                <p>Du mardi au samedi<br>Sur rendez-vous & en boutique</p>
-            </div>
+        <div class="contact-map">
+            <iframe
+                src="https://www.google.com/maps?q=4+avenue+Vauban+66660+Port-Vendres&output=embed"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="row">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="18" cy="6" r="1"/></svg>
-            <div>
-                <strong>Instagram</strong>
-                <p><a href="https://www.instagram.com/lempreinte_florale/" target="_blank" rel="noopener">@lempreinte_florale</a></p>
-            </div>
-        </div>
-    </div>
-    <div class="contact-map">
-        <iframe
-            src="https://www.google.com/maps?q=4+avenue+Vauban+66660+Port-Vendres&output=embed"
-            allowfullscreen
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </section>
 
@@ -267,7 +452,7 @@
         <div>
             <div class="brand-mark">L'Empreinte Florale<span style="color:var(--yellow);font-style:normal">.</span></div>
             <div class="brand-tag">Artisan Fleuriste</div>
-            <p style="color:var(--muted); margin-top:18px; max-width:32ch">L'art floral au cœur de Port-Vendres, depuis chaque saison.</p>
+            <p style="color:var(--muted); margin-top:18px; max-width:32ch">L'art floral au cœur de Port-Vendres, par Jérémy Marques Borras.</p>
         </div>
         <div>
             <h4>Adresse</h4>
@@ -276,8 +461,8 @@
         <div>
             <h4>Contact</h4>
             <p>
-                <a href="https://www.instagram.com/lempreinte_florale/" target="_blank" rel="noopener">@lempreinte_florale</a><br>
-                Sur rendez-vous
+                <a href="tel:+33618987132">06 18 98 71 32</a><br>
+                <a href="mailto:lempreinteflorale66@gmail.com">lempreinteflorale66@gmail.com</a>
             </p>
         </div>
         <div>
@@ -287,8 +472,8 @@
         <div>
             <h4>Suivre</h4>
             <p>
-                <a href="https://www.instagram.com/lempreinte_florale/" target="_blank" rel="noopener">Instagram</a><br>
-                <a href="#contact">Newsletter</a>
+                <a href="https://www.instagram.com/lempreinte_florale/" target="_blank" rel="noopener">@lempreinte_florale</a><br>
+                <a href="https://www.google.com/search?q=L'Empreinte+Florale+Port-Vendres" target="_blank" rel="noopener">Avis Google</a>
             </p>
         </div>
     </div>
@@ -297,6 +482,13 @@
         <span>Mentions légales</span>
     </div>
 </footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/33618987132" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/>
+    </svg>
+</a>
 
 <!-- Lightbox -->
 <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
@@ -313,6 +505,11 @@
     <div class="caption" id="lb-cap"></div>
 </div>
 
-<script src="script.js?v=2"></script>
+<!-- Custom cursor -->
+<div class="custom-cursor" id="customCursor" aria-hidden="true">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35M11 8v6M8 11h6" stroke-linecap="round"/></svg>
+</div>
+
+<script src="script.js?v=3"></script>
 </body>
 </html>
