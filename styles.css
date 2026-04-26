@@ -1263,6 +1263,12 @@ button { font-family: inherit; cursor: pointer; }
 .float-btn--insta:hover {
     box-shadow: 0 8px 24px rgba(220, 39, 67, 0.4);
 }
+.float-btn--fb {
+    background: #1877F2;
+}
+.float-btn--fb:hover {
+    box-shadow: 0 8px 24px rgba(24, 119, 242, 0.45);
+}
 @media (max-width: 520px) {
     .social-floats { bottom: 18px; right: 18px; gap: 10px; }
     .float-btn { width: 46px; height: 46px; }
