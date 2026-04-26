@@ -16,6 +16,13 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
 reveals.forEach(el => io.observe(el));
 
+/* ===== Reviews marquee — duplicate cards for seamless loop ===== */
+const reviewsTrack = document.getElementById('reviewsTrack');
+if (reviewsTrack) {
+    const cards = Array.from(reviewsTrack.children);
+    cards.forEach(c => reviewsTrack.appendChild(c.cloneNode(true)));
+}
+
 /* ===== Filtres galerie ===== */
 const pills = document.querySelectorAll('.filter-pill');
 const plates = document.querySelectorAll('.plate');
