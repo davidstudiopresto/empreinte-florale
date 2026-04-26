@@ -3,7 +3,7 @@ const reveals = document.querySelectorAll('.reveal');
 document.querySelectorAll('.plate.reveal').forEach((el, i) => {
     el.style.setProperty('--reveal-delay', (i * 90) + 'ms');
 });
-document.querySelectorAll('.process-item.reveal, .service.reveal, .testimonial.reveal').forEach((el, i) => {
+document.querySelectorAll('.process-card.reveal, .service.reveal, .testimonial.reveal').forEach((el, i) => {
     el.style.setProperty('--reveal-delay', (i * 110) + 'ms');
 });
 const io = new IntersectionObserver(entries => {
@@ -15,20 +15,6 @@ const io = new IntersectionObserver(entries => {
     });
 }, { threshold: 0.14, rootMargin: '0px 0px -60px 0px' });
 reveals.forEach(el => io.observe(el));
-
-/* ===== Marginalia active = section visible ===== */
-const marks = document.querySelectorAll('.margin-num');
-const sections = Array.from(document.querySelectorAll('.chapter[id]'));
-const sectionIds = sections.map(s => s.id);
-const sectionObserver = new IntersectionObserver(entries => {
-    entries.forEach(e => {
-        if (e.isIntersecting) {
-            const id = e.target.id;
-            marks.forEach(m => m.classList.toggle('active', m.dataset.target === id));
-        }
-    });
-}, { threshold: 0.35 });
-sections.forEach(s => sectionObserver.observe(s));
 
 /* ===== Filtres galerie ===== */
 const pills = document.querySelectorAll('.filter-pill');

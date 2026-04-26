@@ -42,18 +42,6 @@
 <!-- Grain texture overlay -->
 <div class="grain" aria-hidden="true"></div>
 
-<!-- Marginalia : numérotation latérale -->
-<aside class="margin-numerals" aria-hidden="true">
-    <div class="margin-num" data-target="apropos">N° I</div>
-    <div class="margin-num" data-target="processus">N° II</div>
-    <div class="margin-num" data-target="herbier">N° III</div>
-    <div class="margin-num" data-target="prestations">N° IV</div>
-    <div class="margin-num" data-target="mariage">N° V</div>
-    <div class="margin-num" data-target="avis">N° VI</div>
-    <div class="margin-num" data-target="commande">N° VII</div>
-    <div class="margin-num" data-target="contact">N° VIII</div>
-</aside>
-
 <!-- Marquee bandeau supérieur -->
 <div class="marquee" role="region" aria-label="Annonces">
     <div class="marquee-track">
@@ -189,40 +177,39 @@
     <div class="chapter-mark">N° II</div>
     <div class="chapter-head">
         <p class="kicker">Le geste</p>
-        <h2 class="chapter-title">Trois <em>temps</em>,<br>une seule signature.</h2>
+        <h2 class="chapter-title">Trois <em>temps</em>, une seule signature.</h2>
+        <p class="chapter-sub">De la première rencontre à la remise du bouquet, chaque étape est une attention.</p>
     </div>
-    <ol class="process-list">
-        <li class="process-item reveal">
-            <div class="proc-num">i.</div>
-            <div class="proc-body">
-                <h3>L'écoute</h3>
-                <p>Une rencontre, un échange. L'occasion, l'émotion à transmettre, les goûts, les contraintes — tout commence par l'écoute attentive.</p>
-            </div>
-            <div class="proc-decor">
-                <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.8"><circle cx="30" cy="30" r="22"/><path d="M30 12 C30 25, 18 30, 30 48"/></svg>
-            </div>
-        </li>
-        <li class="process-item reveal">
-            <div class="proc-num">ii.</div>
-            <div class="proc-body">
-                <h3>La composition</h3>
-                <p>Sélection des fleurs chez les producteurs, harmonie sur mesure des couleurs, des textures, des parfums. Une œuvre éphémère prend forme.</p>
-            </div>
-            <div class="proc-decor">
-                <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M10 40 Q30 5 50 40"/><path d="M10 40 L50 40"/><circle cx="30" cy="22" r="3"/></svg>
-            </div>
-        </li>
-        <li class="process-item reveal">
-            <div class="proc-num">iii.</div>
-            <div class="proc-body">
-                <h3>La remise</h3>
-                <p>Retrait en boutique ou livraison soignée. Chaque création est protégée, présentée, transmise — comme une page rare offerte.</p>
-            </div>
-            <div class="proc-decor">
-                <svg viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.8"><path d="M5 30 L55 30 M48 23 L55 30 L48 37"/><path d="M30 18 Q22 26 26 32 Q32 30 30 18 Z"/></svg>
-            </div>
-        </li>
-    </ol>
+    <div class="process-cards">
+        <article class="process-card reveal">
+            <span class="proc-num">i.</span>
+            <svg class="proc-icon" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.9" aria-hidden="true">
+                <circle cx="30" cy="30" r="22"/>
+                <path d="M30 12 C30 25, 18 30, 30 48"/>
+            </svg>
+            <h3>L'écoute</h3>
+            <p>Une rencontre, un échange. L'occasion, l'émotion à transmettre, les goûts, les contraintes — tout commence par l'écoute attentive.</p>
+        </article>
+        <article class="process-card reveal">
+            <span class="proc-num">ii.</span>
+            <svg class="proc-icon" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.9" aria-hidden="true">
+                <path d="M10 40 Q30 5 50 40"/>
+                <path d="M10 40 L50 40"/>
+                <circle cx="30" cy="22" r="3"/>
+            </svg>
+            <h3>La composition</h3>
+            <p>Sélection des fleurs chez les producteurs, harmonie sur mesure des couleurs, des textures, des parfums. Une œuvre éphémère prend forme.</p>
+        </article>
+        <article class="process-card reveal">
+            <span class="proc-num">iii.</span>
+            <svg class="proc-icon" viewBox="0 0 60 60" fill="none" stroke="currentColor" stroke-width="0.9" aria-hidden="true">
+                <path d="M5 30 L55 30 M48 23 L55 30 L48 37"/>
+                <path d="M30 18 Q22 26 26 32 Q32 30 30 18 Z"/>
+            </svg>
+            <h3>La remise</h3>
+            <p>Retrait en boutique ou livraison soignée. Chaque création est protégée, présentée, transmise — comme une page rare offerte.</p>
+        </article>
+    </div>
 </section>
 
 <!-- N° III — L'HERBIER (galerie) -->
