@@ -640,18 +640,21 @@ button { font-family: inherit; cursor: pointer; }
 
 .pull-quote {
     margin: 0;
-    padding: 28px 0 0 28px;
+    padding: 18px 0 18px 28px;
     border-left: 2px solid var(--gold);
-    font-family: 'Italiana', serif;
-    font-size: clamp(28px, 3vw, 44px);
-    line-height: 1.15;
-    color: var(--ink);
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(17px, 1.45vw, 21px);
+    line-height: 1.55;
+    color: var(--ink-soft);
     font-weight: 400;
+    font-style: italic;
+    max-width: 52ch;
 }
 .pull-quote em {
     font-family: 'DM Serif Display', serif;
     font-style: italic;
     color: var(--green);
+    font-weight: 400;
 }
 
 /* =========================================================
