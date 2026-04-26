@@ -59,10 +59,10 @@ button { font-family: inherit; cursor: pointer; }
    MARQUEE
    ========================================================= */
 .marquee {
-    background: var(--ink);
+    background: var(--green);
     color: var(--paper);
     overflow: hidden;
-    border-bottom: 1px solid var(--ink);
+    border-bottom: 1px solid var(--green);
 }
 .marquee-track {
     display: inline-flex;
