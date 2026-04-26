@@ -1268,31 +1268,48 @@ button { font-family: inherit; cursor: pointer; }
 }
 
 /* =========================================================
-   WHATSAPP
+   FLOATING SOCIAL BUTTONS
    ========================================================= */
-.whatsapp {
+.social-floats {
     position: fixed;
     bottom: 28px;
     right: 28px;
+    z-index: 90;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+.float-btn {
     width: 52px;
     height: 52px;
     border-radius: 50%;
-    background: var(--green);
-    color: var(--paper);
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 90;
-    transition: transform 0.3s ease, background 0.3s ease;
+    color: var(--paper);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid rgba(244, 237, 224, 0.2);
 }
-.whatsapp:hover {
+.float-btn:hover { transform: scale(1.08); }
+.float-btn--wa {
+    background: var(--green);
+}
+.float-btn--wa:hover {
     background: #25D366;
-    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.35);
+}
+.float-btn--insta {
+    background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-color: rgba(244, 237, 224, 0.25);
+}
+.float-btn--insta:hover {
+    box-shadow: 0 8px 24px rgba(220, 39, 67, 0.4);
 }
 @media (max-width: 520px) {
-    .whatsapp { bottom: 18px; right: 18px; width: 46px; height: 46px; }
-    .whatsapp svg { width: 18px; height: 18px; }
+    .social-floats { bottom: 18px; right: 18px; gap: 10px; }
+    .float-btn { width: 46px; height: 46px; }
+    .float-btn svg { width: 18px; height: 18px; }
+    .float-btn--wa svg { width: 20px; height: 20px; }
 }
 
 /* =========================================================
