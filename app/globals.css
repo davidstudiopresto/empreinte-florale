@@ -1,0 +1,100 @@
+@import "tailwindcss";
+
+:root {
+  --white: #ffffff;
+  --grey-light: #f2f2f2;
+  --border: #e4e4e4;
+  --ink: #192425;
+  --ink-soft: #4a5556;
+  --olive: #868557;
+  --olive-deep: #77764d;
+  --cream: #ffffe5;
+}
+
+@theme inline {
+  --color-white: var(--white);
+  --color-ink: var(--ink);
+  --color-olive: var(--olive);
+  --color-olive-deep: var(--olive-deep);
+  --color-cream: var(--cream);
+  --color-grey-light: var(--grey-light);
+  --color-border: var(--border);
+  --font-sans: var(--font-mona);
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+body {
+  font-family: var(--font-mona), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+  background: var(--white);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--olive);
+  color: var(--white);
+}
+
+/* Hero crossfade carousel */
+@keyframes hero-fade {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+
+/* Subtle reveal */
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-up {
+  animation: fade-up 0.9s ease-out both;
+}
+
+/* Marquee for review carousel */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 13s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* Button arrow nudge */
+.btn-arrow svg {
+  transition: transform 0.35s ease;
+}
+.btn-arrow:hover svg {
+  transform: translateX(4px);
+}
+
+/* Keep dark CTA buttons readable in every link state (visited/active/focus) */
+a.btn-arrow,
+a.btn-arrow:link,
+a.btn-arrow:visited,
+a.btn-arrow:active,
+a.btn-arrow:focus {
+  color: #ffffff;
+  background-color: var(--ink);
+}
+a.btn-arrow:hover {
+  background-color: var(--olive);
+}
